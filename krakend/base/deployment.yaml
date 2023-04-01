@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: krakend
-        image: 7997/krakend:latest # Note: change the image name with the name of OUR image, 
+        image: 7997/krakend:c603cbb3165585788b2d53cc649fc0daac609956 # Note: change the image name with the name of OUR image, 
                                         # with embedded configuration file. 
                                         # See: https://www.krakend.io/docs/deploying/docker/
         ports:
