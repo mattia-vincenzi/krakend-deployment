@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: krakend
-        image: 7997/krakend:079706e0a7f67e083cdf6c71b4b06dbec851928a # Note: Image for ARM64 arch
+        image: 7997/krakend:d538eb0262205834867afa5b4c793ec3626526d6 # Note: Image for ARM64 arch
         ports:
         - containerPort: 8080
         # imagePullPolicy: Never # Decomment when owr image is available
