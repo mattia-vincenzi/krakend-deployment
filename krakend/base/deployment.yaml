@@ -12,9 +12,11 @@ spec:
       labels:
         app: krakend
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
       - name: krakend
-        image: 7997/krakend:201d5642355f5ed9be3181652710d46394a3f011 # Note: Image for ARM64 arch
+        image: harbor.oggivendo.com/oggivendo/krakend:main # Note: Image for ARM64 arch
         ports:
         - containerPort: 8080
         # imagePullPolicy: Never # Decomment when owr image is available
