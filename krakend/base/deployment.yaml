@@ -19,7 +19,7 @@ spec:
         image: harbor.oggivendo.com/oggivendo/krakend:main # Note: Image for ARM64 arch
         ports:
         - containerPort: 8080
-        # imagePullPolicy: Never # Decomment when owr image is available
+        imagePullPolicy: Always
         command: [ "/usr/bin/krakend" ]
         args: [ "run", "-d", "-c", "/etc/krakend/krakend.json", "-p", "8080" ]
         env:
